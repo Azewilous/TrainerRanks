@@ -260,31 +260,31 @@ public class RankHandler {
 			 EntityPlayer target = (EntityPlayer) players.get(i);
 			 sce.setCanceled(true);
 			 if(trainers.contains(player)){
-				 String msg = "§e[Trainer] " + "§f" + player.getDisplayName() + " §f " + sce.message;
+				 String msg = "Â§e[Trainer] " + "Â§f" + player.getDisplayName() + " Â§f " + sce.message;
 				 target.addChatMessage(new ChatComponentText(msg));
 			 }else
 				 if(rkTrainers.contains(player)){
-					 String msg = "§e[Rookie Trainer] " + "§f" + player.getDisplayName() + " §f " + sce.message;
+					 String msg = "Â§e[Rookie Trainer] " + "Â§f" + player.getDisplayName() + " Â§f " + sce.message;
 					 target.addChatMessage(new ChatComponentText(msg));
 				 }else
 					 if(snrTrainers.contains(player)){
-						 String msg = "§e[Senior Trainer] " + "§f" + player.getDisplayName() + " §f " + sce.message;
+						 String msg = "Â§e[Senior Trainer] " + "Â§f" + player.getDisplayName() + " Â§f " + sce.message;
 						 target.addChatMessage(new ChatComponentText(msg));
 					 }else
 						 if(edTrainers.contains(player)){
-							 String msg = "§e[Elder Trainer] " + "§f" + player.getDisplayName() + " §f " + sce.message;
+							 String msg = "Â§e[Elder Trainer] " + "Â§f" + player.getDisplayName() + " Â§f " + sce.message;
 							 target.addChatMessage(new ChatComponentText(msg));
 						 }else
 							 if(elTrainers.contains(player)){
-								 String msg = "§e[Elite Trainer] " + "§f" + player.getDisplayName() + " §f " + sce.message;
+								 String msg = "Â§e[Elite Trainer] " + "Â§f" + player.getDisplayName() + " Â§f " + sce.message;
 								 target.addChatMessage(new ChatComponentText(msg));
 							 }else
 								 if(msTrainers.contains(player)){
-									 String msg = "§e[Master Trainer] " + "§f" + player.getDisplayName() + " §f " + sce.message;
+									 String msg = "Â§e[Master Trainer] " + "Â§f" + player.getDisplayName() + " Â§f " + sce.message;
 									 target.addChatMessage(new ChatComponentText(msg));
 								 }else
 									 if(pmMasters.contains(player)){
-										 String msg = "§e[Pokemon Master] " + "§f" + player.getDisplayName() + " §f " + sce.message;
+										 String msg = "Â§e[Pokemon Master] " + "Â§f" + player.getDisplayName() + " Â§f " + sce.message;
 										 target.addChatMessage(new ChatComponentText(msg));
 									 }
 		 }
@@ -296,12 +296,11 @@ public class RankHandler {
 		   EntityPlayerMP player = (EntityPlayerMP) ejwe.entity;
 		   if((getRank(player) == null) && pokeExp.get(player) == null){
 			   player.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN 
-					   + "\nWelcome To The Uprising Pixelmon Server."
-					   + "§a" + "\nThis Is A Pixelmon SideMod That Gives Trainers Ranks,"
-					   + "§a" + "\nIn This Side Mod You Recieve Something Called PokeExp."
-					   + "§a" + "\nTo Obtain PokeExp You Must Win Trainer Battles Against Actual Players."
-					   + "§a" + "\nObtaining Enough PokeExp Will Allow You To Rank Up."
-					   + "§a" + "\nRanks Are As Follow, Trainer, Rookie Trainer, Senior Trainer, Elder Trainer, Elite Trainer, Master Trainer, Pokemon Master."));
+					   + "Â§a" + "\nThis Is A Pixelmon SideMod That Gives Trainers Ranks,"
+					   + "Â§a" + "\nIn This Side Mod You Recieve Something Called PokeExp."
+					   + "Â§a" + "\nTo Obtain PokeExp You Must Win Trainer Battles Against Actual Players."
+					   + "Â§a" + "\nObtaining Enough PokeExp Will Allow You To Rank Up."
+					   + "Â§a" + "\nRanks Are As Follow, Trainer, Rookie Trainer, Senior Trainer, Elder Trainer, Elite Trainer, Master Trainer, Pokemon Master."));
 		   }
 		 if(getRank(player) == null){
 			 trainers.add(player);
