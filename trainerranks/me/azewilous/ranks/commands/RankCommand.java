@@ -13,11 +13,6 @@ import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 
 public class RankCommand extends CommandBase implements ICommand {
-
-RankHandler rh;
-	public RankCommand(RankHandler rankhandler){
-		this.rh = rankhandler;
-	}
 	
 	private List aliases;
 	
@@ -58,10 +53,7 @@ RankHandler rh;
 					commandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED 
 							+ "Too Few Arguments"));
 				}else 
-					if(args[0].equalsIgnoreCase("up")){
-						RankHandler.rankUp(player);
-					}else
-						if(args[0].equalsIgnoreCase("check")){
+					if(args[0].equalsIgnoreCase("check")){
 							commandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN
 									+ "Your Rank Is " + RankHandler.getRank(player)));
 						} 

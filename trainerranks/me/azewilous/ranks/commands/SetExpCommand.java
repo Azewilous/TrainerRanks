@@ -19,12 +19,12 @@ public class SetExpCommand extends CommandBase implements ICommand {
 
 	@Override
 	public String getCommandName() {
-		return "rankexp";
+		return "pokeexp";
 	}
 
 	@Override
 	public String getCommandUsage(ICommandSender p_71518_1_) {
-		return "rankexp <give/set/check> <amount>";
+		return "pokeexp <give/set/check>";
 	}
 
 	@Override
